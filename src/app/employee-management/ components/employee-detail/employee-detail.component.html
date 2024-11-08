@@ -1,0 +1,24 @@
+
+<div class="employee-detail-container" *ngIf="employee">
+  <h2>Employee Details</h2>
+
+  <div class="employee-avatar">
+    <img
+      [src]="'assets/avatars/' + employee.avatar"
+      alt="Avatar"
+      class="avatar-img-large"
+    />
+  </div>
+
+  <div class="employee-info">
+    <p><strong>Name:</strong> {{ employee.name }}</p>
+    <p><strong>Company Name:</strong> {{ employee.companyName }}</p>
+    <p><strong>Email ID:</strong> {{ employee.email }}</p>
+    <p><strong>Contact No.:</strong> {{ employee.contactNo }}</p>
+    <p><strong>Designation:</strong> {{ employee.designation }}</p>
+  </div>
+
+  <button (click)="goBack()" class="btn btn-secondary">Back to List</button>
+</div>
+
+<p *ngIf="!employee">Employee not found.</p>

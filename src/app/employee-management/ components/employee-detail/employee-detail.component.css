@@ -1,0 +1,37 @@
+
+.employee-detail-container {
+  padding: 1rem;
+  max-width: 400px;
+  margin: auto;
+  text-align: center;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.1);
+}
+
+.employee-avatar {
+  margin-bottom: 1rem;
+}
+
+.avatar-img-large {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+}
+
+.employee-info p {
+  font-size: 1rem;
+  margin: 0.5rem 0;
+}
+
+.btn-secondary {
+  background-color: #888;
+  color: white;
+  border: none;
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+}
+
+.btn-secondary:hover {
+  background-color: #666;
+}
